@@ -50,11 +50,7 @@ spec:
        name: mongodbpod
        labels:
          app: mongodb
-     spec:
-       volumes:
-       - name: pvc
-         persistentVolumeClaim:
-           claimName: mongodbpvc     
+     spec: 
        containers:
        - name: mongodbcontainer
          image: mongo
