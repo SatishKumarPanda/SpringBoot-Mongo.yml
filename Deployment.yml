@@ -42,6 +42,7 @@ kind: ReplicaSet
 metadata:
   name: mongodbrs
 spec:
+  type: NodePort
   selector:
     matchLabels:
       app: mongodb
